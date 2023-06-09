@@ -1,0 +1,14 @@
+name: CI
+
+on: [push]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: run a one-line script
+        run: echo Hello,World!
+      - name: Run a multi-line script
+        run: 
+          echo add other actions to build,
+          echo test,ant deploy you project.
